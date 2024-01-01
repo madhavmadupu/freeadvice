@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+#root, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    scrollbar-color: rgba(255, 255, 255, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Background{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/2915997/pexels-photo-2915997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Card{
+    background-color: rgba(0, 0, 0, 0.205);
+    height: 200px;
+    width: 400px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    gap: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.667);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.anotherButton{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 20px white;
 }
 
-.App-link {
-  color: #61dafb;
+.socials{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links a{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.links a img{
+    margin: 10px;
 }
